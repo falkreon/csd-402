@@ -20,10 +20,12 @@ Note: Whatever your system gradle is, it's probably not appropriate for this pro
 Alternatively, one could just do `gradlew clean build`, navigate to the `build/libs/` directory, and run
 
 ```
-java -jar csd402-1.0.0-all.jar module1
+java -jar csd402-1.0.0-all.jar module1 --console plain
 ```
 
 Note: The non-shadowed `csd402-1.0.0.jar` does not contain all dependencies required to run the assignments. You MUST run the shadowed "all" jar if using this method.
+
+Note: Without `--console plain`, gradle's progress updates screw with text input. It's functional, but ugly.
 
 ## Importing to IDE
 
