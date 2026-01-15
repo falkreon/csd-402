@@ -3,6 +3,7 @@ package blue.endless.csd402;
 import java.util.Map;
 
 import blue.endless.csd402.module1.Module1_3;
+import blue.endless.csd402.module2.Module2_2;
 
 /**
  * This class is just a little router that selects and runs a module based on a command-line argument. Please see the
@@ -10,7 +11,8 @@ import blue.endless.csd402.module1.Module1_3;
  */
 public class App {
 	public static final Map<String, Runnable> ASSIGNMENTS = Map.of(
-			"module1", Module1_3::run
+			"module1", new Module1_3(),
+			"module2", new Module2_2()
 			);
 	
 	public static void main(String... args) {

@@ -14,7 +14,7 @@ import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Module1_3 {
+public class Module1_3 implements Runnable {
 	// Might vary for different temperatures. Some people also list 4190 Seawater is much lower, about 3930.
 	public static final double WATER_SPECIFIC_HEAT = 4184.0; // in J/KgK
 	
@@ -36,7 +36,7 @@ public class Module1_3 {
 		}
 	}
 	
-	public static void run() {
+	public void run() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Water Heating Energy Calculator");
 		System.out.println();
