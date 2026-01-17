@@ -5,6 +5,7 @@ import java.util.Map;
 import blue.endless.csd402.module1.Module1_3;
 import blue.endless.csd402.module2.Module2_2;
 import blue.endless.csd402.module3.Module3_2;
+import blue.endless.csd402.module4.Module4_2;
 
 /**
  * This class is just a little router that selects and runs a module based on a command-line argument. Please see the
@@ -14,7 +15,8 @@ public class App {
 	public static final Map<String, Runnable> ASSIGNMENTS = Map.of(
 			"module1", new Module1_3(),
 			"module2", new Module2_2(),
-			"module3", new Module3_2()
+			"module3", new Module3_2(),
+			"module4", new Module4_2()
 			);
 	
 	public static void main(String... args) {
