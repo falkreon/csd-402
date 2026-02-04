@@ -8,6 +8,7 @@ import blue.endless.csd402.module3.Module3_2;
 import blue.endless.csd402.module4.Module4_2;
 import blue.endless.csd402.module5.Module5_2;
 import blue.endless.csd402.module5.Module5_2b;
+import blue.endless.csd402.module6.Module6_2;
 
 /**
  * This class is just a little router that selects and runs a module based on a command-line argument. Please see the
@@ -20,7 +21,8 @@ public class App {
 			"module3", new Module3_2(),
 			"module4", new Module4_2(),
 			"module5", new Module5_2(),
-			"module5b", new Module5_2b()
+			"module5b", new Module5_2b(),
+			"module6", new Module6_2()
 			);
 	
 	public static void main(String... args) {
