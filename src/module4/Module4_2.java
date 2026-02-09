@@ -6,15 +6,16 @@
  *   
  * Isaac Ellingson
  * 1/17/2026
+ *    Adapted 2/5/2026
  */
 
 package blue.endless.csd402.module4;
 
 import java.util.Arrays;
 
-public class Module4_2 implements Runnable {
+public class Module4_2 {
 	
-	public void run() {
+	public static void main(String... args) {
 		short[] shortArray = new short[] { Short.MAX_VALUE, 0, -1, 12, 17 }; // Sum won't overflow
 		System.out.println("Short Array: " + Arrays.toString(shortArray));
 		System.out.println("Average: " + average(shortArray));

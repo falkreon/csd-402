@@ -6,6 +6,7 @@
  *   
  * Isaac Ellingson
  * 2/4/2026
+ *    Adapted on 2/5/2026
  */
 
 package blue.endless.csd402.module5;
@@ -13,16 +14,13 @@ package blue.endless.csd402.module5;
 import java.text.NumberFormat;
 import java.util.Arrays;
 
-public class Module5_2 implements Runnable {
+public class Module5_2 {
 	/*
 	 * For this assignment I had to make a call, because it's unspecified whether the array indices are row/col or x/y.
 	 * For code simplicity I decided on [row][col], which is equivalent to [y][x].
 	 * 
 	 * When reporting values, on the other hand, I'm using zero-indexed [x, y] for clarity, to make it easy to visually
 	 * check results.
-	 * 
-	 * I also created a variant of this exercise, "module5b", which takes a fully generic approach, with more idiomatic
-	 * return values. Its source is next to this class at #Module5_2b
 	 */
 	
 	/**
@@ -187,7 +185,7 @@ public class Module5_2 implements Runnable {
 		}
 	}
 	
-	public void run() {
+	public static void main(String... args) {
 		double[][] doubleTest = new double[][] {
 			{ 12.6,   9.8,  4.2 },
 			{  7.1, 125.21,83.37 }

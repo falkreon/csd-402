@@ -4,12 +4,13 @@
  *   Part 2: Programming Assignment
  * Isaac Ellingson
  * 1/17/2026
+ *    Adapted 2/5/2026
  */
 
 package blue.endless.csd402.module3;
 
-public class Module3_2 implements Runnable {
-	public void run() {
+public class Module3_2 {
+	public static void main(String... args) {
 		printPyramid(7);
 	}
 	
@@ -18,7 +19,7 @@ public class Module3_2 implements Runnable {
 	 * after 12 lines or so, as we also need to adjust the width of each column to accommodate larger numbers.
 	 * @param numLines The number of lines of this pyramid pattern to print.
 	 */
-	public void printPyramid(int numLines) {
+	public static void printPyramid(int numLines) {
 		if (numLines == 0) return;
 		if (numLines < 0) throw new IllegalArgumentException("Cannot print a negative number of lines.");
 		

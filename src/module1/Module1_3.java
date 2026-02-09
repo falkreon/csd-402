@@ -4,6 +4,7 @@
  *   Part 3: Programming Assignment
  * Isaac Ellingson
  * 1/14/2026
+ *   Adapted on 2/5/2026
  */
 
 
@@ -14,7 +15,7 @@ import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Module1_3 implements Runnable {
+public class Module1_3 {
 	// Might vary for different temperatures. Some people also list 4190 Seawater is much lower, about 3930.
 	public static final double WATER_SPECIFIC_HEAT = 4184.0; // in J/KgK
 	
@@ -36,7 +37,7 @@ public class Module1_3 implements Runnable {
 		}
 	}
 	
-	public void run() {
+	public static void main(String... args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Water Heating Energy Calculator");
 		System.out.println();

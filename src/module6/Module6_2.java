@@ -10,7 +10,7 @@
 
 package blue.endless.csd402.module6;
 
-public class Module6_2 implements Runnable {
+public class Module6_2 {
 	/**
 	 * Represents the states or speeds that a fan is permitted to be in.
 	 */
@@ -94,7 +94,7 @@ public class Module6_2 implements Runnable {
 		}
 	}
 	
-	public void run() {
+	public static void main(String... args) {
 		Fan defaultFan = new Fan();
 		System.out.println("No-Arg Constructor: " + defaultFan);
 		System.out.println("Default fan is on?: " + defaultFan.isOn());
