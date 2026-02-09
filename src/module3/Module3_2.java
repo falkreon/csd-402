@@ -7,7 +7,7 @@
  *    Adapted 2/5/2026
  */
 
-package blue.endless.csd402.module3;
+package module3;
 
 public class Module3_2 {
 	public static void main(String... args) {

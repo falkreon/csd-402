@@ -8,7 +8,7 @@
  * 2/4/2026
  */
 
-package module6;
+package module7;
 
 public class Module6_2 {
 	/**

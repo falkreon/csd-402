@@ -8,7 +8,7 @@
  */
 
 
-package blue.endless.csd402.module1;
+package module1;
 
 import java.text.NumberFormat;
 import java.util.InputMismatchException;

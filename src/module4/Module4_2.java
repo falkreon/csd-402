@@ -9,7 +9,7 @@
  *    Adapted 2/5/2026
  */
 
-package blue.endless.csd402.module4;
+package module4;
 
 import java.util.Arrays;
 

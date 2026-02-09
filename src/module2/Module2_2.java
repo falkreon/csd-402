@@ -8,7 +8,7 @@
  */
 
 
-package blue.endless.csd402.module2;
+package module2;
 
 import java.util.Locale;
 import java.util.Random;

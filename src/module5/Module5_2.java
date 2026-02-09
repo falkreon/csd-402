@@ -9,7 +9,7 @@
  *    Adapted on 2/5/2026
  */
 
-package blue.endless.csd402.module5;
+package module5;
 
 import java.text.NumberFormat;
 import java.util.Arrays;
