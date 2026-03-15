@@ -6,6 +6,8 @@
  * Creates two instances each of our concrete Division subclasses and show that their constructors work.
  * Isaac Ellingson
  * 2/28/2026
+ * 
+ * Redone 3/15/2026 to migrate the toString() methods to concrete implementations of a display() method on Division
  */
 
 package module10;
@@ -24,7 +26,7 @@ public class UseDivision {
 		// Just so you can see the getters working too. The toString in each subclass delegates to the getters.
 		System.out.println("Divisions in Company:");
 		for(Division division : divisions) {
-			System.out.println("  " + division);
+			division.display();
 		}
 	}
 }

@@ -21,9 +21,9 @@ public class DomesticDivision extends Division {
 	}
 	
 	@Override
-	public String toString() {
+	public void display() {
 		String acct = Integer.toString(getAccountNumber());
 		while (acct.length() < 8) acct = '0' + acct;
-		return "{name: " + getName() + ", accountNumber: " + acct + ", state: " + getState() + "}";
+		System.out.println("{name: " + getName() + ", accountNumber: " + acct + ", state: " + getState() + "}");
 	}
 }

@@ -33,9 +33,9 @@ public class InternationalDivision extends Division {
 	}
 	
 	@Override
-	public String toString() {
+	public void display() {
 		String acct = Integer.toString(getAccountNumber());
 		while (acct.length() < 8) acct = '0' + acct;
-		return "{name: " + getName() + ", accountNumber: " + acct + ", country: " + getCountry() + ", language: " + getLanguage() + "}";
+		System.out.println("{name: " + getName() + ", accountNumber: " + acct + ", country: " + getCountry() + ", language: " + getLanguage() + "}");
 	}
 }

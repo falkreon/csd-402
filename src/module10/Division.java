@@ -30,4 +30,9 @@ public abstract class Division {
 	public int getAccountNumber() {
 		return accountNumber;
 	}
+	
+	/**
+	 * Prints the Division's state to stdout, including domestic- or international-specific fields
+	 */
+	public abstract void display();
 }
