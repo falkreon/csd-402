@@ -44,6 +44,7 @@ public class Example extends Application {
 		"      <children>",
 		"        <Button text='Plasma' onAction='#choosePlasma'/>",
 		"        <Button text='Fire' onAction='#chooseFire'/>",
+		"        <Button text='Metaball' onAction='#chooseMetaball'/>",
 		"      </children>",
 		"    </HBox>",
 
@@ -87,6 +88,7 @@ public class Example extends Application {
 	
 	public static final SceneEffect PLASMA = new PlasmaEffect();
 	public static final SceneEffect FIRE = new FireEffect();
+	public static final SceneEffect METABALL = new MetaballEffect();
 	
 	private static CustomAnimationTimer animationTimer = new CustomAnimationTimer();
 	
@@ -102,6 +104,13 @@ public class Example extends Application {
 	 */
 	public void chooseFire() {
 		animationTimer.setEffect(FIRE);
+	}
+	
+	/**
+	 * Switches the effect the animationTimer drives to the "metaball" demoscene effect
+	 */
+	public void chooseMetaball() {
+		animationTimer.setEffect(METABALL);
 	}
 	
 	@Override
