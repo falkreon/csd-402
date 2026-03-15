@@ -1,0 +1,60 @@
+plugins {
+    id 'java';
+    id 'application';
+    id 'org.openjfx.javafxplugin' version '0.0.10';
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_10;
+    targetCompatibility = JavaVersion.VERSION_1_10;
+    
+    modularity.inferModulePath = true;
+}
+
+version = '1.0';
+group = 'blue.endless';
+
+repositories {
+    mavenCentral();
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-base:17.0.18:linux';
+    implementation 'org.openjfx:javafx-controls:17.0.18:linux';
+    implementation 'org.openjfx:javafx-graphics:17.0.18:linux';
+    implementation 'org.openjfx:javafx-fxml:17.0.18:linux';
+    
+    runtimeOnly 'org.openjfx:javafx-base:17.0.18:linux';
+    runtimeOnly 'org.openjfx:javafx-controls:17.0.18:linux';
+    runtimeOnly 'org.openjfx:javafx-graphics:17.0.18:linux';
+    runtimeOnly 'org.openjfx:javafx-fxml:17.0.18:linux';
+}
+
+
+sourceSets {
+    main.java.srcDirs = ['src'];
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = "UTF-8";
+	it.options.release = 10;
+}
+
+run {
+    doFirst {
+        jvmArgs = [
+                '--module-path', classpath.asPath,
+                '--add-modules', 'javafx.base',
+                '--add-modules', 'javafx.controls',
+                '--add-modules', 'javafx.graphics'
+        ]
+    }
+}
+
+application {
+    mainClass = 'module11.Example';
+}
+
+javafx {
+	version = "11";
+}
